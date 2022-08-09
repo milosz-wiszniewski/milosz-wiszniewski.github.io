@@ -17,8 +17,13 @@
 
     </div>
 
-    <script>
-        ReactDOM.render(<h1>Hello React</h1>, document.querySelector('#kontener'))
+    <script type="text/babel">
+        class Headline extends React.Component {
+            render() {
+                return <h1>Hello React</h1>
+            }
+        }
+        ReactDOM.render(<Headline />, document.querySelector('#kontener'))
     </script>
 </body>
 
